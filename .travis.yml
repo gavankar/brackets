@@ -3,6 +3,7 @@ sudo: false # use container-based Travis infrastructure
 node_js:
   - "6"
 before_script:
+  - phpenv global 7.0 #switch to php7, since that's what php-Tooling extension requires
   - npm install -g grunt-cli
   - npm install -g jasmine-node
 notifications:
